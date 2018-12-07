@@ -1,0 +1,48 @@
+<ion-tabs>
+
+  <ion-tab tab="home">
+    <ion-router-outlet name="home"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="order">
+    <ion-router-outlet name="order"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="publish">
+    <ion-router-outlet name="publish"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="office">
+    <ion-router-outlet name="office"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="follow">
+    <ion-router-outlet name="follow"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab-bar slot="bottom">
+
+    <ion-tab-button tab="home" href="/tabs/(home:home)">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>首页</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="order" href="/tabs/(order:order)">
+      <ion-icon name="clipboard"></ion-icon>
+      <ion-label>订单</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="publish" href="/tabs/(publish:publish)">
+      <ion-icon name="chatboxes" class="icon ion-compose"></ion-icon>     
+      <ion-label>发布</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="office" href="/tabs/(office:office)">
+      <ion-icon name="person"></ion-icon>
+      <ion-label>我的</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="follow" href="/tabs/(follow:follow)">
+      <ion-icon name="eye"></ion-icon>
+      <ion-label>关注</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+</ion-tabs>
